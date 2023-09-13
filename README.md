@@ -1,6 +1,4 @@
-#  Customer Management 
-
-# Express Node EJS MongoDB
+#  Customer Management App
 
 
 
