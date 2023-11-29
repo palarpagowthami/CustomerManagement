@@ -10,7 +10,7 @@ exports.homepage = async (req, res) => {
     const messages = await req.consumeFlash('info');
     const locals = {
       title: 'NodeJs',
-      description: 'Free NodeJs User Management System'
+      description: 'NodeJs Customer Management System'
     }
 
     let perPage = 12;
@@ -57,7 +57,7 @@ exports.homepage = async (req, res) => {
 exports.about = async (req, res) => {
     const locals = {
       title: 'About',
-      description: 'Free NodeJs User Management System'
+      description: 'NodeJs Customer Management System'
     }
 
     try {
@@ -79,7 +79,7 @@ exports.about = async (req, res) => {
 exports.addCustomer = async (req, res) => {
   const locals = {
     title: "Add New Customer - NodeJs",
-    description: "Free NodeJs User Management System",
+    description: "NodeJs Customer Management System",
   };
 
   res.render("customer/add", locals);
@@ -122,7 +122,7 @@ exports.view = async (req, res) => {
 
     const locals = {
       title: "View Customer Data",
-      description: "Free NodeJs User Management System",
+      description: "NodeJs Customer Management System",
     };
 
     res.render('customer/view', {
@@ -149,7 +149,7 @@ exports.edit = async (req, res) => {
 
     const locals = {
       title: "Edit Customer Data",
-      description: "Free NodeJs User Management System",
+      description: "NodeJs Customer Management System",
     };
 
     res.render('customer/edit', {
@@ -211,7 +211,7 @@ exports.searchCustomers = async (req, res) => {
 
   const locals = {
     title: "Search Customer Data",
-    description: "Free NodeJs User Management System",
+    description: "NodeJs Customer Management System",
   };
 
   try {
